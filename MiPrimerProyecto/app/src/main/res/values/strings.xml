@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Aplicacion Android</string>
+    <string name="mensaje">Hola que tal</string>
+    <string name="btnsiguiente">Aceptar</string>
+    <string name="btncancelar">Cancelar</string>
+
+</resources>

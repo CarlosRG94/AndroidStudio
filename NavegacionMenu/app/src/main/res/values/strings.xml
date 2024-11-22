@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">NavegacionMenu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Aplicacion Ejemplo</string>
+    <string name="nav_header_subtitle">Aqui tenemos varios ejemplos de navegacion</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Toast</string>
+    <string name="menu_nuevo">Nuevo</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="name_actividad">La actividad</string>
+
+</resources>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        style="@style/EstiloTexto1"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:gravity="bottom|center_horizontal"
+                        android:text="Base del número"
+                        android:textSize="25sp" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/radioButton"
+                            style="@style/EstiloTexto1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Binario"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            style="@style/EstiloTexto1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Octal"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3"
+                            style="@style/EstiloTexto1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Decimal"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4"
+                            style="@style/EstiloTexto1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Hexadecimal"
+                            android:textSize="18sp" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/EstiloTexto1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        style="@style/EstiloTexto1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Número"
+                        android:textSize="25sp" />
+
+                    <EditText
+                        android:id="@+id/textoeditar"
+                        android:layout_width="159dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="text" />
+
+                    <Button
+                        android:id="@+id/button"
+                        style="@style/EstiloTexto1"
+                        android:layout_width="141dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="60dp"
+                        android:text="Convertir" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="04"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/EstiloTexto1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Resultado de la conversión"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        style="@style/EstiloTexto1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:text="Binario:"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/converbi"
+                        style="@style/EstiloTexto1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20sp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:textSize="18sp" />
+
+                </TableRow>
+
+                <TableRow
+                    style="@style/EstiloTexto2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        style="@style/EstiloTexto2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="---------------------------------------" />
+
+                    <TextView
+                        style="@style/EstiloTexto2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="---------------------------------------------------------------------------" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        style="@style/EstiloTexto1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:text="Octal:"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/converoct"
+                        style="@style/EstiloTexto1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20sp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="365464"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    style="@style/EstiloTexto2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        style="@style/EstiloTexto2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="---------------------------------------" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        style="@style/EstiloTexto2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-----------------------------------------------------------------------" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        style="@style/EstiloTexto1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:text="Decimal:"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/converdec"
+                        style="@style/EstiloTexto1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="34dp"
+                        android:layout_marginRight="20sp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="12578"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    style="@style/EstiloTexto2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        style="@style/EstiloTexto2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="---------------------------------------" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        style="@style/EstiloTexto2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="---------------------------------------------------------" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        style="@style/EstiloTexto1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hexadecimal:"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="15sp" />
+
+                    <TextView
+                        android:id="@+id/converhex"
+                        style="@style/EstiloTexto1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="20sp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="1EB34"
+                        android:textSize="18sp" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

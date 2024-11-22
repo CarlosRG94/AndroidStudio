@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Base application theme.-->
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--customize your theme here.-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="EstiloTexto1" parent="@android:style/Theme.Dialog">
+        <item name="android:textColor">@color/rojo</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="EstiloTexto2" parent="@android:style/Theme.Dialog">
+        <item name="android:textColor">@color/verde</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="btnAceptar1" parent="@android:style/Theme.Dialog">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="btnCancelar1" parent="@android:style/Theme.Dialog">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+
+</resources>

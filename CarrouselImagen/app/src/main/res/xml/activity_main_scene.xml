@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Transición para cambiar entre imágenes -->
+    <Transition
+        app:constraintSetStart="@id/start"
+        app:constraintSetEnd="@id/end"
+        app:duration="1000">
+        <OnSwipe
+            app:touchAnchorId="@+id/image1"
+            app:dragDirection="dragLeft"
+            app:touchAnchorSide="right"
+            app:moveWhenScrollAtTop="true"/>
+    </Transition>
+
+    <!-- Estado inicial -->
+    <ConstraintSet android:id="@+id/start">
+        <!-- Imagen 1 visible en el centro -->
+        <Constraint android:id="@+id/image1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!-- Imagen 2 posicionada a la derecha de la imagen 1 -->
+        <Constraint android:id="@+id/image2"
+            app:layout_constraintStart_toEndOf="@id/image1"
+            app:layout_constraintTop_toTopOf="@id/image1"
+            app:layout_constraintBottom_toBottomOf="@id/image1" />
+
+        <!-- Imagen 3 posicionada a la derecha de la imagen 2 -->
+        <Constraint android:id="@+id/image3"
+            app:layout_constraintStart_toEndOf="@id/image2"
+            app:layout_constraintTop_toTopOf="@id/image2"
+            app:layout_constraintBottom_toBottomOf="@id/image2" />
+    </ConstraintSet>
+
+    <!-- Estado final -->
+    <ConstraintSet android:id="@+id/end">
+        <!-- Imagen 1 desplazada a la izquierda fuera de la pantalla -->
+        <Constraint android:id="@+id/image1"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!-- Imagen 2 visible en el centro -->
+        <Constraint android:id="@+id/image2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!-- Imagen 3 posicionada a la derecha de la imagen 2 -->
+        <Constraint android:id="@+id/image3"
+            app:layout_constraintStart_toEndOf="@id/image2"
+            app:layout_constraintTop_toTopOf="@id/image2"
+            app:layout_constraintBottom_toBottomOf="@id/image2" />
+    </ConstraintSet>
+
+</MotionScene>
