@@ -146,4 +146,17 @@
         app:layout_constraintStart_toEndOf="@+id/texto1"
         app:layout_constraintTop_toBottomOf="@+id/spinner" />
 
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="34dp"
+        android:text="ToggleButton"
+        android:textOff="No"
+        android:textOn="Si"
+        android:checked="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

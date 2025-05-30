@@ -8,32 +8,47 @@
     android:background="#FF000000"
     tools:context=".MainActivity">
 
-    <FrameLayout
-        android:id="@+id/frameLayout"
-        android:layout_width="276dp"
-        android:layout_height="81dp"
-        android:layout_marginTop="76dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.985"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="204dp"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <EditText
+            android:id="@+id/textonum2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:ems="13"
+            android:inputType="text"
+            android:text="Name" />
 
         <TextView
-            android:id="@+id/textView"
-            style="@style/Estilotexto"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center|right"
-            android:text="introduzca la operacion" />
-    </FrameLayout>
+            android:id="@+id/textView2"
+            android:layout_width="237dp"
+            android:layout_height="59dp"
+            android:text="TextView" />
+
+        <EditText
+            android:id="@+id/textonum1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="13"
+            android:inputType="text"
+            android:text="Name" />
+    </LinearLayout>
+
 
     <TableLayout
         android:layout_width="404dp"
         android:layout_height="524dp"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="70dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <TableRow
             android:layout_width="match_parent"
@@ -159,9 +174,9 @@
             <Button
                 android:id="@+id/btnsum"
                 style="@style/EstiloBotonOperador"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="match_parent"
-                android:layout_marginRight="15dp"
+
                 android:layout_weight="0"
                 android:text="+" />
         </TableRow>
@@ -204,5 +219,7 @@
                 android:text="=" />
         </TableRow>
     </TableLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

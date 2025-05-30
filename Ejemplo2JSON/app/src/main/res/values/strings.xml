@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ejemplo2JSON</string>
+    <string name="todas_personas">Todas las personas</string>
+    <string name="una_persona">Una persona</string>
+    <string name="texto_DNI">DNI:</string>
+    <string name="texto_nombre">Nombre:</string>
+    <string name="texto_telefono">Teléfono:</string>
+    <string name="texto_email">Email:</string>
+</resources>
